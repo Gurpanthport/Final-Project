@@ -1,0 +1,13 @@
+﻿@using final_project.Models
+@model StoreType
+@{
+    ViewBag.Title = "Browse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Browsing Types of Store: @Model.StoreName</h2>
+<ul>
+    @foreach (StoreItem item in Model.StoreItems)
+    {
+        <li>@Html.ActionLink(item.StoreName, "Details", new { id = item.StoreItemId })</li>
+    }
+</ul>

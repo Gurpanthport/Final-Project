@@ -15,14 +15,14 @@ namespace final_project.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "About Electronics Store.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Contact US.";
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }

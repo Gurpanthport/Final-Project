@@ -12,8 +12,8 @@ namespace final_project.Models
         {
         }
 
-        public virtual DbSet<CategoryType> PorductTypes { get; set; }
-        public virtual DbSet<Items> ProductItems { get; set; }
+        public virtual DbSet<StoreType> StoreTypes { get; set; }
+        public virtual DbSet<StoreItem> StoreItems { get; set; }
 
       
     }

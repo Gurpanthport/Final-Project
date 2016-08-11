@@ -1,0 +1,18 @@
+﻿@using final_project.Models
+@model StoreItem
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="description">
+    <h2>Details</h2>
+    <h2>Food Item: @Model.StoreName</h2>
+    <ul>
+        <li>Menu Type: @Model.StoreType.Name</li>
+        <li>Food Description: @Model.description </li>
+        <li>Food Price: @Model.Price</li>
+        <li>
+            <img src="@Model.FoodUrl" alt="@Model.StoreName" />
+        </li>
+    </ul>
+</div>

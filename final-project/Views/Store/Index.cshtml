@@ -1,0 +1,70 @@
+﻿@model IEnumerable<final_project.Models.Store>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body style="background-color:#1a1a1a">
+    <h1 style="color:#ff0000">Products</h1>
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div>
+
+                <h3 style="color:#efc7c7">Cameras</h3>
+
+                <div>
+                    <img alt="appetizer" src="~/Assets/images/MenuApp.jpg" style="height:250px; width:200px" />
+                </div>
+                <hr />
+
+                <div>
+                    <a href="~/Storetype/Browse?StoreType=Appetizer" class="btn btn-lg btn-warning">
+                        <span>View Cameras</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+
+            <div>
+
+                <h3 style="color:#efc7c7">Tv's</h3>
+
+                <div class="active">
+                    <img alt="maincourse" src="~/Assets/images/MenuMain.jpg" style="height:250px; width:200px" />.
+                </div>
+                <hr />
+
+                <div>
+
+                    <a href="~/Storetype/Browse?StoreType=Appetizer" class="btn btn-lg btn-warning">
+                        <span>View Tv's Selection</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+
+            <div>
+
+                <h3 style="color:#efc7c7">Computers</h3>
+
+                <div class="active">
+                    <img alt="dessert" src="~/Assets/images/MenuDessert.jpg" style="height:250px; width:200px" />.
+                </div>
+                <hr />
+                <div>
+                    <a href="~/Storetype/Browse?StoreType=Appetizer" class="btn btn-lg btn-warning">
+                        <span>View PC's & Laptops</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>

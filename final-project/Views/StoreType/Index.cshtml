@@ -1,0 +1,16 @@
+﻿@using final_project.Models
+@model IEnumerable<StoreType>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Browse Store Items:</h2>
+<p>
+    Select from @Model.Count() different Store Types:
+</p>
+<ul>
+    @foreach (StoreType StoreItem in Model)
+    {
+        <li>@Html.ActionLink(StoreItem.Name, "Browse", new { MenuType = StoreItem.Name })</li>
+    }
+</ul>
