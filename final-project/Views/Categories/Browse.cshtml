@@ -1,0 +1,15 @@
+﻿
+@using final_project.Models
+@model CategoryType
+@{
+    ViewBag.Title = "Browse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="font-size:x-large">Browsing Types of Menu: @Model.Name</h2>
+<hr />
+<ul>
+    @foreach (Items Items in Model.Name)
+    {
+        <li style="font-size:x-large">@Html.ActionLink(item.ProductName, "Details", new { id = item.ProductItemId })</li>
+    }
+</ul>

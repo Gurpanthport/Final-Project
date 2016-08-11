@@ -1,0 +1,40 @@
+﻿
+@using final_project.Models
+@model Items
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="description">
+    <h2 style="color:red; font-family:Papyrus; font-size:36px">Details</h2>
+    <h2 style="font-family:Papyrus; font-size:36px">Food Item: @Model.ProductName</h2>
+    <hr />
+    <div>
+        <table class="table">
+            <tr style="color:beige">
+                <th style="font-size:18px; font-family:Papyrus">
+                    Menu Type:
+                </th>
+                <td style="font-size:x-large">
+                    @Model.ProductType.Name
+                </td>
+                <th style="font-size:18px; font-family:Papyrus">
+                    Food Description:
+                </th>
+                <td style="font-size:x-large">
+                    @Model.description
+                </td>
+                <th style="font-size:18px; font-family:Papyrus">
+                    Food Price:
+                </th>
+                <td style="font-size:x-large">
+                    @Model.Price
+                </td>
+                <th style="font-size:18px; font-family:Papyrus">
+                    Food:
+                </th>
+               
+            </tr>
+        </table>
+    </div>
+</div>
