@@ -14,20 +14,19 @@ namespace final_project.Models
 
         }
 
-        public StoreItem(string StoreName)
+        public StoreItem(string Name)
         {
-            this.StoreName = StoreName;
+            this.Name = Name;
         }
-        [Display(Name = "Product Item")]
+        [Display(Name = "Store Item")]
         public virtual int StoreItemId { get; set; }
+        [Display(Name = "Store Type")]
         public virtual int StoreTypeId { get; set; }
         public virtual StoreType StoreType { get; set; }
-        [Display(Name = "Product Type")]
-        public virtual string StoreName { get; set; }
+        public virtual string Name { get; set; }
         public virtual string description { get; set; }
         public virtual decimal Price { get; set; }
-        [Display(Name = "Food Url")]
-        public virtual string FoodUrl { get; set; }
-
+        [Display(Name = "Album Art Url")]
+        public virtual string StoreLink { get; set; }
     }
 }

@@ -1,70 +1,70 @@
-﻿@model IEnumerable<final_project.Models.Store>
-
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@{
+    ViewBag.Title = "Home Page";
 }
-<body style="background-color:#1a1a1a">
-    <h1 style="color:#ff0000">Products</h1>
-    <div class="row">
-        <div class="col-sm-4">
+<!--
+    Filename=index.cshtml,
+    Author's name= Dilpreet Singh, gurpanth singh and sakib patel
+    website = http://eshopy.azurewebsites.net/
+    file description = this is website to sell electronics items.
+-->
 
-            <div>
-
-                <h3 style="color:#efc7c7">Cameras</h3>
-
-                <div>
-                    <img alt="appetizer" src="~/Assets/images/MenuApp.jpg" style="height:250px; width:200px" />
-                </div>
-                <hr />
-
-                <div>
-                    <a href="~/Storetype/Browse?StoreType=Appetizer" class="btn btn-lg btn-warning">
-                        <span>View Cameras</span>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="col-sm-4">
-
-            <div>
-
-                <h3 style="color:#efc7c7">Tv's</h3>
-
-                <div class="active">
-                    <img alt="maincourse" src="~/Assets/images/MenuMain.jpg" style="height:250px; width:200px" />.
-                </div>
-                <hr />
-
-                <div>
-
-                    <a href="~/Storetype/Browse?StoreType=Appetizer" class="btn btn-lg btn-warning">
-                        <span>View Tv's Selection</span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-sm-4">
-
-            <div>
-
-                <h3 style="color:#efc7c7">Computers</h3>
-
-                <div class="active">
-                    <img alt="dessert" src="~/Assets/images/MenuDessert.jpg" style="height:250px; width:200px" />.
-                </div>
-                <hr />
-                <div>
-                    <a href="~/Storetype/Browse?StoreType=Appetizer" class="btn btn-lg btn-warning">
-                        <span>View PC's & Laptops</span>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
+<h1>Most Sold Electronics</h1>
+<div class="row">
+    <div class="col-md-4">
+        <h2>4K TV</h2>
+        <p>
+            <img class="index-image" src="~/Assets/4k.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
     </div>
-</body>
+    <div class="col-md-4">
+        <h2>Asus G7 Laptop</h2>
+        <p>
+            <img class="index-image" src="~/Assets/asus g7.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Dell inspiron 15</h2>
+        <p>
+            <img class="index-image" src="~/Assets/dell inspiron 15.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>HP Yoga</h2>
+        <p>
+            <img class="index-image" src="~/Assets/hp yoga.png" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>LG Android Phone</h2>
+        <p>
+            <img class="index-image" src="~/Assets/lg android.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Nokia Mobile Phone</h2>
+        <p>
+            <img class="index-image" src="~/Assets/nokia-mobile-phone.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Samsung Galaxy S4</h2>
+        <p>
+            <img class="index-image" src="~/Assets/samsung galaxy s4.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Samsung TV</h2>
+        <p>
+            <img class="index-image" src="~/Assets/samsung.jpg" />
+        </p>
+        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    </div>
+
+</div>
