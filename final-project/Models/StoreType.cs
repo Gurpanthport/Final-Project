@@ -5,7 +5,10 @@ using System.Web;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 namespace final_project.Models
-{
+{/**Created By Gurpanth Singh 200299024
+ * Sakib Patel 200307608
+ * Dilpreet Singh 
+ * The site depicts the structure of an ecommerce store*/
     public class StoreType
     {
         public StoreType()

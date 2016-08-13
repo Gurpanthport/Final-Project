@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-
+/**Created By Gurpanth Singh 200299024
+ * Sakib Patel 200307608
+ * Dilpreet Singh 
+ * The site depicts the structure of an ecommerce store*/
 namespace final_project.Models
 {
+    /*Adding the sample data to the database*/
     public class SampleData : DropCreateDatabaseIfModelChanges<StoreContext>
     {
         protected override void Seed(StoreContext context)
@@ -27,9 +31,6 @@ namespace final_project.Models
                 new StoreItem {Name = "Lenovo A530 ", description ="The Lenovo A530 is a slim, space-saver that sports a widely adjustable screen, which tilts from -5° to 90° allowing use as a traditional PC or as a flat, table PC using the device’s 10-point multi-touch display for games and entertainment", Price=23.55M, StoreType= types.Single(g => g.Name == "Main Course"), StoreLink="/Content/Images/Laptop.jpg" },
                 new StoreItem {Name = "Bose SoundTouch 10", description="Compact, portable, and easy to set up, the Bose SoundTouch 10 is the solution to enjoying music anywhere in your home.", Price=27.24M, StoreType= types.Single(g => g.Name == "Speakers"), StoreLink="/Content/Images/Speaker.png" },
                 
-
-             
-
             }.ForEach(a => context.StoreItems.Add(a));
         }
     }
