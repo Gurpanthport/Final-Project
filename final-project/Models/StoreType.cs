@@ -18,7 +18,7 @@ namespace final_project.Models
             this.Name = Name;
         }
 
-        public virtual int StoreTypelsId { get; set; }
+        public virtual int StoreTypeId { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
         public virtual string imageUrl { get; set; }

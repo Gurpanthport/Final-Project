@@ -1,70 +1,52 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<final_project.Models.StoreType>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<!--
-    Filename=index.cshtml,
-    Author's name= Dilpreet Singh, gurpanth singh and sakib patel
-    website = http://eshopy.azurewebsites.net/
-    file description = this is website to sell electronics items.
--->
 
-<h1>Most Sold Electronics</h1>
-<div class="row">
-    <div class="col-md-4">
-        <h2>4K TV</h2>
-        <p>
-            <img class="index-image" src="~/Assets/4k.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
+    <h1 style="color:#ff0000">Menu</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <div>
+                <h3 style="color:#efc7c7">Cameras</h3>
+                <div>
+                    <img alt="cameras" src="~/Assets/images/MenuApp.jpg" style="height:250px; width:200px" />
+                </div>
+                <hr />
+                <div>
+                    <a href="~/Home/Cameras" class="btn btn-lg btn-warning">
+                        <span>View Cameras</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div>
+                <h3 style="color:#efc7c7">Tablets</h3>
+                <div class="active">
+                    <img alt="tablets" src="~/Assets/images/tablets.jpg" style="height:250px; width:200px" />.
+                </div>
+                <hr />
+                <div>
+                    <a href="~/Home/tablets" class="btn btn-lg btn-warning">
+                        <span>View Tablets</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div>
+                <h3 style="color:#efc7c7">Phones</h3>
+                <div class="active">
+                    <img alt="dessert" src="~/Assets/images/Phones.jpg" style="height:250px; width:200px" />.
+                </div>
+                <hr />
+                <div>
+                    <a href="~/Home/Phones" class="btn btn-lg btn-warning">
+                        <span>View Phones</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Asus G7 Laptop</h2>
-        <p>
-            <img class="index-image" src="~/Assets/asus g7.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Dell inspiron 15</h2>
-        <p>
-            <img class="index-image" src="~/Assets/dell inspiron 15.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>HP Yoga</h2>
-        <p>
-            <img class="index-image" src="~/Assets/hp yoga.png" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>LG Android Phone</h2>
-        <p>
-            <img class="index-image" src="~/Assets/lg android.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Nokia Mobile Phone</h2>
-        <p>
-            <img class="index-image" src="~/Assets/nokia-mobile-phone.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Samsung Galaxy S4</h2>
-        <p>
-            <img class="index-image" src="~/Assets/samsung galaxy s4.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Samsung TV</h2>
-        <p>
-            <img class="index-image" src="~/Assets/samsung.jpg" />
-        </p>
-        <p><a class="btn btn-default" href="">Learn more &raquo;</a></p>
-    </div>
-
-</div>
+</body>
